@@ -1,0 +1,79 @@
+*,*::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    
+    /* browser by default gives some values for ex bullet point to unordered list it add some margin between text we dont't want that things at all.Now everything will be put to zero and we will decide what to do * means for every element of page */
+}
+
+/* 1). first we deal with header which is from gmail to create account */
+header{
+    background: white;
+    /* as header has some shadow   for this shadow code serach google for css box shadow */
+    box-shadow: 0 0 4px 10px #eee;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+
+header img{
+    height: 30px;
+}
+
+
+/* header is in 2 row when view on mobile screen and in one row when view on pc so we can use flex box */
+
+header nav{
+    height: 56px;
+    /* when in mobile view two box have same height and we have these two in 
+    two diffrent nav so setting both nav with same height */
+    /*border: 1px solid red; */
+    display: flex; /*using flex we can space the element out i.e  get gmail ,gmail,sign etc in header can be seprated
+                     so that we can adjest them where ever we want. */
+    align-items: center; /* our get gmail box will strach out so to bring in vertically center */
+    padding: 2%; /* corner se 1% right left side screen se aur 1% left right side screen se shift kr dega */
+    border-bottom: 1px solid #ddd; /* it will draw boder between gmail and for-work dibbe ke bich. */
+    /*when we will scroll down header will also come down*/
+    
+}
+/* decorating a tag inside*/
+a{
+    display: inline-block;
+    text-decoration: none; /* as we dont want underline which is by default in links */
+    color: grey;
+}
+/* when we hover it should start to be black */
+a:hover{
+    color: black;
+}
+/* now making Gmail in header and in span in html tag bigger and for worl and sign in in two diffrent corner
+      and decorating get gmail button*/
+.btn{
+    color: white; /* text color insise box is white */
+    background-color: #1a73e8;
+    padding: 0 24px; /* 0 means no padding on top and botten and 24px padding on sides */
+    line-height: 36px;
+    border-radius: 3px; /*to make button curly from side */
+    letter-spacing: 0.75px;
+}
+.btn:hover{
+    background-color: #174ea6;
+    color: white;
+}
+.gmail-logo-text{
+    color: #445;
+    font-size: 24px;
+    margin-left: 7px; /*spacing between gmail logo and gmail text */
+    font-weight: 200%;
+}
+/* to seprate getgmail and gmail written beside gmail logo in header we will use margin auto */
+.margin-auto{
+    margin-right: auto; /*till will push getgmail button as right of text gmail */
+}
+.margin-auto1{
+    margin-right: auto; /* this will move sign in text on the header to right */
+}

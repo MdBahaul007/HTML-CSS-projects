@@ -1,0 +1,52 @@
+footer img{
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 22px;
+    
+}
+
+footer ul{
+    display: flex;/*privacy,terms,about,etc 1 hi line me aajaigi */
+    list-style-type: none; /*remove dots*/
+    margin-top: 22px;
+    margin-left: 22px; /*will shift privacy bar towrd right*/
+
+    
+}
+/*to give margin b/w privacy,terms,about etc */
+footer li{
+    margin-right: 16px;
+    margin-bottom: 22px;/*give spacing b.w privacy section and help section*/
+}
+.footer-link{
+    margin-left: 22px;
+}
+
+select{
+    margin-left: 25px;
+    border: none; /*as english don't have border */
+    background-color: #F0F3F4;
+    padding: 8px; /*to make border box taller */
+    width: 300px
+    
+}
+footer{
+    /*as footer is some what light in color so*/
+    background-color: #f8f8f8;
+}
+
+.help-logo{
+    background-color: black;
+    color: white;
+    font-weight: 600; /*it will somewhat bold ? */
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center; /*it will align ? in center of the box*/
+    border-radius: 50px;
+    margin-right: 15px;
+    
+    
+    
+    
+}

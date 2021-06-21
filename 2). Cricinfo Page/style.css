@@ -1,0 +1,208 @@
+/*to disable by default properties of browser*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;  
+}
+
+
+.mobile{
+    border: 1px solid #eee;
+    max-width:500px;
+    max-height: 800px;
+    border-radius:2rem;
+    margin: 1rem auto;
+    font-family: sans-serif;
+    
+}
+
+header{
+    
+    background-color: #064dbb;
+    height: 13rem;/*to make header big */
+}
+
+/* in header to make back back button and image at two side of corner */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*back will come in cenre of header bar*/
+    padding: 1rem 1.5rem; /*to serpate header content from sides 1.5 is for side and 1 for top*/
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+
+nav img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999%;
+}
+/* result section is card and same thing goes with menu, ,table,player of match section they all looks in card so creating a new class call card */
+
+.card{
+    background-color: white; /*as all card are white in color*/
+    border-radius: 1rem;/* to make side curly*/
+    border: 1px solid #eee; /*for very light border*/
+    margin: 1rem auto;
+    /*to make border always be respective*/
+    overflow: hidden;
+    box-shadow: 2px 2px 12px 0;
+    width: 92%; /*all card will have width 92%*/
+}
+
+
+/* to overlape result card with header */
+/* actual margin b/w result and haeder is about 1 rem but if we use negetive margin it will go upward*/
+
+.result{
+    margin-top: -4.5rem;
+    /*padding-left: 1rem; /* to shift text somewhat left of card*/
+    /*padding-right: 1.5rem;*/
+    padding: 1rem 1.5rem; /*this means 1rem left padding ie shifting text in result card 1 rem left anf 1.5 rem right*/
+
+}
+
+.team{ /* team name and all will come in centre with team logo img using align item */
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+    
+}
+
+.score{
+    margin-left: auto;/*to push score as left as possible*/
+    text-align: right; /*score will come in left as shown*/
+}
+
+
+.team img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999rem;/* to make it complete round*/
+    margin-right: 0.5rem; /*to seprate country name and logo*/
+}
+.vs{
+   text-align: center;
+}
+
+.vs span{
+    background-color: #ccc;
+    color: #666;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    padding: 0.09rem;
+    display: inline-block; /*so that we can see clearly and bring vs in centre of bx*/
+}
+
+/* in order to give some margin b/w wc2011 final and team*/
+.subtitle{
+    margin-bottom: 1.5rem;
+}
+
+/* to do spacing b/w India and match result*/
+
+.summery{
+    margin-top: 1rem;
+}
+.summery p{
+    color: #666;
+}
+
+/* now menu bar */
+
+menu{
+    display: grid;/*se screenshot how gird looks it basically convert menu button into rows*/
+    /* now converting those grid into 3 equal col*/
+    grid-template-columns: 1fr 1fr 1fr;
+}
+menu button{
+    background: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+menu button.active{
+    border-bottom: 4px solid #064dbb;
+    color: #064dbb;
+}
+
+
+/* coming to table*/
+
+/*as all text in table heading is black*/
+table{
+    text-align: left; /*it will make batsman haeding and all other heading come left*/
+     /*sothat all thing like batsman runs etc take full space*/
+    border-collapse: collapse; /* it will remove white line coming in table*/
+    text-align: center;/*it will align all text in table in center R will come under 92 and so on*/
+    
+}
+/*to coorect text align right  we are doing text-align right too control overflow of the table*/
+thead th,tbody td:first-child{ /*thead ka phala child  aur tbody ka phla child*/
+    text-align: left;
+    padding-left: 1rem; /* so what shift batsman,names under it towards right*/
+}
+
+
+
+thead th,tbody td:last-child{
+    padding-right: 1.5rem; 
+    
+}
+thead{
+    color: black;
+}
+
+/*as rows of table have diffrent color like grey*/
+tbody{
+    background-color: #f2f2f2;
+}
+
+td,th{
+    padding: 1rem 0.25rem ; /*to make names boxes big*/
+}
+/*as in actual image row of ms dhoni and yuvraj singh has diffrent row color and same for the bowlers so doing so*/
+tbody tr:nth-child(2n + 1)/*every odd row is liner gradient and and every even row is grey*/
+{
+    background: linear-gradient(to bottom,#f2f2f2,white 80%,white); /* every odd row is linear gradient from top to bottem*/ 
+    
+}
+/*to make name look like hyperlink*/
+tbody td:first-child{
+    color: #064dbb;
+    font-weight: 600;
+}
+.pom{
+    margin:1rem 1.5rem;
+    padding: 1rem 1.5rem;
+    width: auto;
+    position: relative;
+    height: 10rem;/*to increse the box size*/
+    overflow: visible;
+}
+.pom img{
+    bottom: 0;
+    right: 1rem;
+    position: absolute;/*it will bring img to right*/
+    height: 10rem;
+}
+.pom h2{
+    margin-bottom: 0.5rem;
+}
+.pom .name{
+    font-size: 1.5rem; /*to increse ms dhoni name size}*/
+}
+
+/* as all the heading h2 are small in size*/
+h2{
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+}
+

@@ -1,0 +1,73 @@
+@import "header.css"; /*importing for applying same properties to GetGmail button.*/
+
+
+h1, h2{
+    font-size: 28px;
+    color: #222;
+    font-weight: 600;
+    text-align: center;
+     /*top margin of 32px and no margin on sides*/
+    font-family: sans-serif;
+    font-weight: 430;
+    letter-spacing: 1px;
+    margin-top: 32px;
+    margin-bottom: 35px;
+    
+    
+    
+}
+
+p{
+    text-align: center;
+    
+}
+section{
+    padding: 24px; /*when we will squeze the tab the images and text will not touch cornr*/
+    
+    /*text-align: center;it will align all images,heading,paragraph in center.*/
+    
+    /*we can use flex here to bring everything in centere
+    display:flex ->childern will come side by side ie horizontally.
+    
+    flex-direction:coloum; ->we wnt them coloum wise.
+    
+    as all things will be stretched so we will 
+
+    align-item:center;
+    justify-content:center;
+    
+    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*h1 is text is bigger than the other font so making it big*/
+h1{
+    font-size: 40px;
+
+}
+
+.first-section, .never-drop-ball-section, .avoid-suspicious-email-section, .stay-organized-section{
+    background-color: #f8f8f8;
+}
+.get-gmail-section img{
+    height: 70px;
+}
+
+/*to make get gmail 2nd button some what bigger */
+
+.get-gmail-section .btn{
+    line-height: 50px; 
+}
+
+.experience-gmail-section p img{
+    height: 42px;
+    margin-top: 40px;
+}
+
+/*as our device image is overflowing or underflowing when squizzing the page so adjusting width*/
+.device-image-section img{
+    width: 100%; /* now it will completly show what so ever is page size*/
+}

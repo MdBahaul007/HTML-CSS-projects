@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    border: 2px solid black;
+    margin: 0 0 0 0;
+    padding: 15px;
+    background-color: #3880ff;
+    opacity: 0.89;
+}
+
+li{
+    list-style:none;
+    display: inline-block;
+    
+}
+ul{
+    margin-top: -8.5px;
+    margin-bottom: -4px
+}
+
+
+
+.container a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.feedbackBtn{
+    padding:6px;
+    border-radius: 4px;
+    color: white;
+    background-color: #3880ff;
+    border-color: #ffffff;
+}
+li .downloadBtn{
+    margin-top:  5px;
+}
+
+li a i{
+     border: none;
+    padding: 10px;
+}
+/*
+li input{
+    position: relative;
+    width: 200px;
+    left: 500px;
+}
+*/
+.rightItems{
+    display: inline-block;
+    float: right;
+    margin-top: 3px;
+}
+
+.rightItems input{
+    padding: 8px;
+/*    margin-top: -px;*/
+    border: none;
+    border-top-left-radius: 3px;
+    height: 32px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+.right-btn button{
+/*    border: 2px solid red;*/
+    padding: 6px;
+    border-top-right-radius: 6px;
+    margin-left: -20px;
+    height: 36px;
+    cursor: pointer;
+    background-color: #3880ff;
+    color: #ffffff;
+    
+}
+a:hover{
+    background-color: #668cff;
+}
+button:hover{
+    background-color: #668cff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

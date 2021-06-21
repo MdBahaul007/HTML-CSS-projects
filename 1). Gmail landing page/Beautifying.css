@@ -1,0 +1,5 @@
+/* in original gmail when we are streching the page the size of the h1,h2 and p tags is also increasing so it is ok according to mobile view but we need to adjust according to pc view*/
+@media (min-width:800px){
+    h1,h2,p{
+        16px;
+    }
